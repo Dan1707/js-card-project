@@ -12,7 +12,7 @@ const cards = [
 class CardBuilder {
   render() {
     let card = "";
-    cards.forEach(({ flowerName, price }, index) => {
+    cards.forEach(({ flowerName, price }) => {
       card += `
         <div class="block__item">
           <div class="block__img_wrapper">
@@ -33,8 +33,8 @@ class CardBuilder {
               iusto excepturi? Quisquam?
             </p>
             <div class="block__btn_wrapper">
-              <button class="block__btn" data-action="add" data-price="${price}" data-index="${index}">add to cart</button>
-              <button class="block__btn" data-action="delete" data-price="${price}" data-index="${index}">delete</button>
+              <button class="block__btn" data-action="add" data-price="${price}">add to cart</button>
+              <button class="block__btn" data-action="delete" data-price="${price}">delete</button>
             </div>
           </div>
         </div>
